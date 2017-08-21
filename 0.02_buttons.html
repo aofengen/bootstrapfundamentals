@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title></title>
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+		<script src="http://code.jquery.com/jquery-3.2.1.min.js"</script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	</head>
+	<body>
+		<h1>Example Buttons</h1>
+		<a class="btn btn-default" href="#" role="button">Link</a>
+		<button class="btn btn-default" type="submit">Button</button>
+		<input class="btn btn-default" type="button" value="Input">
+		<input class="btn btn-default" type="submit" value="Submit">
+	</body>
+	<br>
+	<h1>BRONZE - button in 1 column of a grid</h1>
+		<div class="container">
+			<div class="row">
+				<div class="col-xs-1">
+					<button class="btn btn-default" type="submit">Button</button>
+				</div>
+				<div class="col-xs-11">
+					BLANK SPACE
+				</div>
+			</div>
+		</div>
+	<br>
+	<br>
+	<h1>SILVER - Success button 2 columns wide</h1>
+		<div class="container">
+			<div class="row">
+				<div class="col-xs-2">
+					<button class="btn btn-default btn-block" type="submit">Success</button>
+				</div>
+				<div class="col-xs-10">
+					BLANK SPACE
+				</div>
+			</div>
+		</div>
+	<br>
+	<br>
+	<h1>GOLD - Danger button 3 columns wide</h1>
+		<div class="container">
+			<div class="row">
+				<div class="col-xs-2">
+					BLANK SPACE
+				</div>
+				<div class="col-xs-3">
+					<button class="btn btn-danger btn-block" id="evilButton" type="input" onclick="evilFunction()">DANGER</button>
+				</div>
+				<div class="col-xs-2" id="evilWindow">
+					<script type="text/javascript">
+						function evilFunction() {
+							document.getElementById("evilWindow").innerHTML = "EVIL";
+						}
+					</script>
+				</div>
+			</div>
+		</div>
+</html>
